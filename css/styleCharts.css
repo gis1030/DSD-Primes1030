@@ -1,0 +1,143 @@
+html {
+    font-size: 10px;
+    height: 100%;
+    padding: 20px;
+    font-weight: 300;
+}
+
+body {
+    font-family: "Calibri", sans-serif;
+    margin: 0px;
+    color: #070707;
+
+    min-height: 100%;
+    margin: 4px;
+    padding: 4px;
+    text-align: left;
+}
+
+.containerLogo {
+    display: flex;
+    justify-content: center;
+    /* Centra horizontalmente */
+    align-items: flex-start;
+    /* Alinea al inicio (arriba) */
+    width: 100%;
+    /* Ocupa todo el ancho */
+    height: 100px;
+    /* Ajusta la altura deseada */
+}
+
+img {
+    max-width: 100%;
+    /* Asegura que la imagen no exceda el ancho del contenedor */
+    max-height: 100%;
+    /* Asegura que la imagen no exceda la altura del contenedor */
+}
+
+main {
+    padding: 60px;
+}
+
+section {
+    margin-bottom: 40px;
+}
+
+p {
+    font-size: 2em;
+}
+
+h1 {
+    font-size: 4.5rem;
+    margin: 0.2rem;
+}
+
+h2 {
+    line-height: 1.2;
+    font-size: 1.75rem;
+    margin: 0.5rem;
+}
+
+h3 {
+    color: #00537e;
+    font-size: 2.5rem;
+    margin: 0;
+}
+
+h4 {
+    color: #00537e;
+    font-size: 2.75rem;
+    font-weight: bold;
+    margin: 0;
+}
+
+hr {
+    border-color: black;
+    margin-bottom: 50px;
+}
+
+figure {
+    background-color: rgba(255, 255, 255, .05);
+    padding: 20px 10px 30px;
+}
+
+figure p {
+    margin-bottom: 7px;
+    font-size: .8em;
+}
+
+canvas {
+    width: 100%;
+}
+
+
+/* grid */
+[class*='cols'] {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+}
+
+.cols-3>* {
+    width: 33.33%;
+    margin: 10px
+}
+
+.cols-2>* {
+    width: 33.33%;
+    height: 50%;
+    margin: 10px
+}
+
+.cols-1>* {
+    width: 100%;
+    margin: 10px
+}
+
+#chart020 {
+    max-height: 300px;
+}
+
+#chart030 {
+    max-height: 300px;
+}
+
+section {
+    opacity: 1;
+    transition: opacity .3s;
+}
+
+/*
+.running section {
+    opacity: 1
+}
+
+.loading {
+    position: absolute;
+    border: none;
+}
+
+.running .loading {
+    display: none;
+}
+*/

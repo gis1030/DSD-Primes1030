@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <title>DSD Schaerbeek</title>
+    <link rel="shortcut icon" href="css/images/1030_Icon.png" type="image/x-icon">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Visualización de datos con ChartJS</title>
+    <link href="https://fonts.googleapis.com/css?family=Poppins:100,200,300" rel="stylesheet" />
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/styleCharts.css">
+</head>
+
+<body>
+    <div class="containerLogo">
+        <img decoding="async" src="css/images/schaerbeek1030_logo.png">
+    </div>
+    <main>
+        <h1>Primes Octrayes par la DSD de la Commune de Schaerbeek</h1>
+        <p>Affichage des statistiques globales</p>
+
+        <hr>
+
+        <a href="index.html" style="font-size: 20px; text-decoration: none;">
+            <img src="css/images/1030_Icon.png" width="20px" ; style="vertical-align: middle; margin-right: 5px;">
+            Cliquez ici pour visiter la cartographie
+        </a>
+
+        <section class="cols-1">
+            <figure>
+                <h4>Primes attribuées par la DSD entre 1998 et 2025</h4>
+                <canvas id="chart020"></canvas>
+            </figure>
+        </section>
+
+        <a href="index.html" style="font-size: 20px; text-decoration: none;">
+            <img src="css/images/1030_Icon.png" width="20px" ; style="vertical-align: middle; margin-right: 5px;">
+            Cliquez ici pour visiter la cartographie
+        </a>
+
+        </a>
+        <section class="cols-2">
+            <figure>
+                <h4>Primes Velo par année</h4>
+                <canvas id="chart011"></canvas>
+            </figure>
+
+            <figure>
+                <h4>Primes Façade Vert par année</h4>
+                <canvas id="chart012"></canvas>
+            </figure>
+
+            <figure>
+                <h4>Primes Compostiere par année</h4>
+                <canvas id="chart013"></canvas>
+            </figure>
+        </section>
+
+        <a href="index.html" style="font-size: 20px; text-decoration: none;">
+            <img src="css/images/1030_Icon.png" width="20px" ; style="vertical-align: middle; margin-right: 5px;">
+            Cliquez ici pour visiter la cartographie
+        </a>
+        <section class="cols-1">
+            <figure>
+                <h4>Primes attribuées par la DSD par Quartiers</h4>
+                <canvas id="chart030"></canvas>
+            </figure>
+        </section>
+
+        <a href="index.html" style="font-size: 20px; text-decoration: none;">
+            <img src="css/images/1030_Icon.png" width="20px" ; style="vertical-align: middle; margin-right: 5px;">
+            Cliquez ici pour visiter la cartographie
+        </a>
+
+        <section class="cols-2">
+            <figure>
+                <h4>Primes Velo par quartier</h4>
+                <canvas id="chart021"></canvas>
+            </figure>
+
+            <figure>
+                <h4>Primes Façade Vert par quartier</h4>
+                <canvas id="chart022"></canvas>
+            </figure>
+
+            <figure>
+                <h4>Primes Compostiere par quartier</h4>
+                <canvas id="chart023"></canvas>
+            </figure>
+        </section>
+
+        </section>
+
+    </main>
+
+    <!-- Data coasters -->
+    <script src="data/dataWorld.js"></script>
+    <script src="data/Primes1030_DSD_Velos.js"></script> <!-- Prime Velo -->
+    <script src="data/Primes1030_DSD_FacadeVert.js"></script> <!-- Prime Façade Vert -->
+    <script src="data/Primes1030_DSD_Compostiere.js"></script> <!-- Prime Compostiere -->
+    <!-- ChartJS  -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/3.7.0/chart.min.js"></script>
+
+    <!-- Styles for charts -->
+    <script src="js/jsChart/chartStyles.js"></script>
+
+    <!-- DCharts development -->
+    <script src="js/jsChart/chartScriptDSD.js"></script>
+    <script src="js/jsChart/chartsFunctionsGeojson.js"></script>
+</body>
+
+</html>
